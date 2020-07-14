@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <link rel="shortcut icon" type="image/png" 
+    href="Progle.png"/>
+    <meta charset="UTF-8">
+    <title>Progle Login</title>
+    <link rel="stylesheet" type="text/css" href="Login.css" />
+    <style>
+    @import url(http://fonts.googleapis.com/css?family=Exo:100,200,400);
+    @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,300);
+</style>
+</head>
+<body oncontextmenu="return false">
+<img src="Progle.png">
+<h1>Go to Google Mail using Progle Mail Login!</h1>
+    <div class="body1">
+        <div class="header">
+            <div>Progle<span>Mail</span></div>
+        </div>
+        <br>
+        <form name="login">
+        <div class="login">
+            <input type="text" placeholder="Username" name=userid>
+            <br>
+            <input type="password" placeholder="Password" name=pswrd>
+            <br>
+            <input type="button" onclick="check(this.form)" value="Login"/>
+
+    </div>
+        </form>
+  <script language="javascript">
+    function check(form)
+    {
+        if(form.userid.value=="Progle" && form.pswrd.value=="ImadeProgle123")
+        {
+            window.open('https://mail.google.com/mail/u/0/#inbox');
+        }
+        else if(form.userid.value=="" && form.pswrd.value=="")
+        {
+            alert("You must put a Username and password");
+            userid.style.border="2px solid red";
+            pswrd.style.border="2px solid red";
+        }
+        else{
+            alert("The Username and Password you entered don't match");
+            userid.style.border="2px solid red";
+            pswrd.style.border="2px solid red";
+        }
+    }
+  </script>
+</body>
+</html>
